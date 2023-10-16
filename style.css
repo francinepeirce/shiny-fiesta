@@ -1,0 +1,155 @@
+body {
+  padding: 0;
+  background-color: #663399;
+  font-family: Rubik, sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+}
+
+p {
+  text-indent: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-family: Vast Shadow, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  font-family: Bebas Neue, sans-serif;
+}
+
+h3,
+h5 {
+  text-align: center;
+  color: white;
+  font-family: Vast Shadow, sans-serif;
+}
+
+h4 {
+  text-align: center;
+  color: white;
+  font-family: Bebas Neue, sans-serif;
+}
+
+ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+.brand-icon {
+  max-width: 42px;
+  max-height: 42px;
+  margin-right: 0.75rem;
+}
+
+.navbar-brand {
+  font-family: Bebas Neue, sans-serif;
+  font-size: 30px;
+}
+
+.nav-item {
+  font-family: Bebas Neue, sans-serif;
+  font-size: 26px;
+}
+
+.my-photo {
+  height: 400px;
+  display: block;
+  margin-inline: auto;
+  box-shadow: 5px 5px black;
+}
+
+.fade-in {
+  animation: fadeIn 7s;
+}
+
+.wrapper {
+  margin-inline: auto;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  background-image: url("images/polygons.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-me {
+  font-family: Bebas Neue, sans-serif;
+  text-align: center;
+}
+
+.attribution {
+  font-size: x-small;
+  text-align: right;
+}
+
+/* pseudo-class and pseudo-elements */
+p::first-letter {
+  font-size: xx-large;
+  font-family: Vast Shadow, sans-serif;
+}
+
+.interests li::before {
+  content: "»";
+  margin: 0.5rem;
+}
+
+h2::before {
+  content: "❋";
+  margin: 0.25rem;
+}
+
+h2::after {
+  content: "❋";
+  margin: 0.25rem;
+}
+
+h5::after {
+  content: "📧";
+  margin: 0.25rem;
+}
+
+a:hover {
+  background-color: #C9A0DC;
+  cursor: crosshair;
+}
+
+a:link {
+  color: whitesmoke;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+/* animation code */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* media query for reduced motion */
+@media screen and (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none;
+  }
+}
+
+/* media query to hide the element if screen size has width of 600px or less */
+@media screen and (max-width: 600px) {
+
+  .contact-me,
+  .hobbies {
+    display: none;
+  }
+}

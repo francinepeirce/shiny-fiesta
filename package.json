@@ -1,0 +1,14 @@
+{
+  "name": "1_1_2--pseudos_with_sass",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch --no-source-map style.scss style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
